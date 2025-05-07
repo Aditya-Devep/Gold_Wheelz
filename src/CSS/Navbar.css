@@ -1,0 +1,35 @@
+/* Navbar.css */
+.brand-name {
+    /* font-size: 2.5rem; */
+    white-space: nowrap;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .brand-name {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+
+  .nav-item :hover{
+    background-color:darksalmon;
+    border-radius: 30px;
+  }
+  
+
+  .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link.active {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    font-weight: bold;
+  }
+  

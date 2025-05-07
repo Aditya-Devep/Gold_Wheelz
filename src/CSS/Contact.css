@@ -1,0 +1,27 @@
+     
+
+.flex-img{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+#Tflex{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#Eflex{
+    margin-left: 90px;
+    /* padding-bottom: 20px; */
+}
+
+.form{
+    background-color:white;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px gray ;
+}

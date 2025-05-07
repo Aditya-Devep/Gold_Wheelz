@@ -1,0 +1,69 @@
+.bgmain{
+    background-image: url('/public/images/bglambo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px ;
+    width: 100%;
+    position: relative;
+}
+
+.bgblur{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#about{
+    color: aliceblue;
+    margin-left: 200px;
+    /* margin-top: 400px; */
+    padding: 220px 400px;
+}
+
+#Alorem{
+    margin-left: 200px;
+}
+
+.info1{
+    padding: 35px;
+    background-color: azure;
+}
+
+.values{
+    background-color: rgb(193, 197, 200);
+    padding: 70px;
+    margin-bottom: 30px;
+}
+
+.Valimage {
+    height: 120px;
+    width: 120px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .Valimage {
+      height: 70px;
+      width: 70px;
+    }
+    .Valimage img {
+      height: 30px !important;
+    }
+  }
+  
+  .location-card {
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .location-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  

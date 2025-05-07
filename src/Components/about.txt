@@ -1,0 +1,131 @@
+{/* Main  */}
+            <div className="bgmain">
+                <div className="bgblur">
+                    <div id='about' data-aos="fade-right">
+                        <h1 className='fs-1 fw-bold'>About <span style={{ color: 'orangered' }}> Gold  Wheels </span> </h1>
+                        <p className='my-3 fs-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia  eligendi nemo officia.</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* main -end  */}
+
+
+            {/* Journey-Mission Div  */}
+            <div className="container mt-4">
+                <div className="col-md-12">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h1 style={{ marginTop: 110 }}>Our Journey</h1>
+                            <p className='fs-5 text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. facere ipsa saepe. Distinctio vitae maiores doloremque, est, quia atque nulla quod blanditiis repellendus quos quae? Repellat facere, qui molesti ducimus vnim itaque maxime quam architecto aut at, nemo corrupti.</p>
+
+                            <h1 style={{ marginTop: 60 }}>Our mission</h1>
+                            <p className='fs-5 text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. facere ipsa saepe. Distinctio vitae maiores doloremque, est, quia atque nulla quod blanditiis repellendus quos quae? Repellat facere, qui molesti ducimus vnim itaque maxime quam architecto aut at, nemo corrupti.</p>
+                        </div>
+
+                        <div className="col-md-6 my-5">
+                            <img src="./images/About/Acras.jpg" alt="" height={550} width={590} style={{ borderRadius: 30 }} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Journey-Mission Div end  */}
+
+
+            {/* Customer Div  */}
+            <div className="info1">
+                <div className="container mt-5">
+                    <div className="col-md-12">
+                        <div className="row mb-5">
+                            {
+                                numarr.map((val, index) => {
+                                    return (
+                                        <div className="col-md-3" data-aos="fade-up">
+                                            <h1 className=' fw-bold text-center' style={{ color: 'orangered' }}  >{val.num} </h1>
+                                            <h5 className='text-dark text-center fw-bold ' >{val.word}</h5>
+                                            <p className='text-center my-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eos!</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Customer div  end */}
+
+
+            {/* Founder - Leadersip div  */}
+
+            <div className="container mt-3">
+                <div className="col-md-12">
+                    <div className="row">
+                        <div className="col-md-6 my-5">
+                            <img src="./images/About/person.jpg" alt="" height={550} width={590} style={{ borderRadius: 30 }} />
+                        </div>
+                        <div className="col-md-6">
+                            <h1 style={{ marginTop: 110 }}>Meet Our Founder</h1>
+                            <p className='fs-5 text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. facere ipsa saepe. Distinctio vitae maiores doloremque, est, quia atque nulla quod blanditiis repellendus quos quae? Repellat facere, qui molesti ducimus vnim itaque maxime quam architecto aut at, nemo corrupti.</p>
+
+                            <h1 style={{ marginTop: 60 }}>Leadership & Expertise</h1>
+                            <p className='fs-5 text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. facere ipsa saepe. Distinctio vitae maiores doloremque, est, quia atque nulla quod blanditiis repellendus quos quae? Repellat facere, qui molesti ducimus vnim itaque maxime quam architecto aut at, nemo corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Founder - Leadersip div end  */}
+
+
+            {/* Values Div  */}
+            <div className="values">
+                <div className="container">
+                    <div className="col-md-12">
+                        <div className="row">
+                            {
+                                values.map((val, index) => {
+                                    return (
+                                        <div className=" col-md-3 text-center " data-aos="fade-up">
+                                            <div className="Rimage text-center " >
+                                                <img src={val.img} alt="" height={60} className='my-3' />
+                                            </div>
+                                            <h4 className='my-3'>{val.text}</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* Values Div - end  */}
+ 
+
+            {/* Location Div  */}
+
+            <div className="loca my-5">
+                <div className="container">
+                    <h1 className=' fs-1'>Our Locations</h1>
+                    <div className="row">
+                        {
+                            loc.map((val, index) => {
+                                return (
+                                    <div className="col-md-3 mt-5 text-center" >
+                                        <div className="blur h-100 w-100 position-relative" >
+                                            <img src={val.img} alt="" height={200} style={{ borderRadius: 19 }} />
+                                            <span className=' text-secondary fw-bold'>{val.lname}</span>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+                <br /><br />
+                <br />
+            </div>
+
+            {/* Location Div end  */}
